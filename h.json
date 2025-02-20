@@ -1,0 +1,47 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "baner": [
+    {
+      "id": "1",
+      "url": "./imag/Nike. Just Do It. Nike.com/nike-just-do-it.jpg"
+    }
+  ],
+  "imag": [
+    {
+      "id": "1",
+      "url": "./imag/Nike. Just Do It. Nike.com/nike-just-do-it (4).jpg",
+      "text": ["Run Ready", "Essentials for Every Mile", "Shop"]
+    },
+    {
+      "id": "2",
+      "url": "./imag/Nike. Just Do It. Nike.com/nike-just-do-it (3).jpg",
+      "text": ["Iconic For a Reason", "Nike Dunk Low", "Shop"]
+    },
+    {
+      "id": "3",
+      "url": "./imag/Nike. Just Do It. Nike.com/nike-just-do-it (2).jpg",
+      "text": ["Feel More Alive", "Nike ACG", "Shop"]
+    },
+    {
+      "id": "4",
+      "url": "./imag/Nike. Just Do It. Nike.com/nike-just-do-it (1).jpg",
+      "text": ["Worry-Free Leak Protection", "Jordan Shortie", "Shop"]
+    }
+  ],
+  "video": [
+    {
+      "id": "1",
+      "url": "./imag/Nike. Just Do It. Nike.com/Nike.mp4"
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

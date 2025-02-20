@@ -1,0 +1,6 @@
+div.video {
+  margin-top: 30px;
+}
+div.video > video {
+  width: 100%;
+}

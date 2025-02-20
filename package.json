@@ -1,0 +1,19 @@
+{
+  "name": "nike",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "json-server": "^1.0.0-beta.3",
+    "live-server": "^1.2.2"
+  }
+}

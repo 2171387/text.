@@ -1,0 +1,43 @@
+div.menu {
+  width: 100%;
+  margin-top: 140px;
+  text-align: center;
+}
+div.logo {
+  width: 100%;
+  height: inherit;
+}
+div.logo > img {
+  width: 80px;
+  height: 60px;
+  user-select: none;
+}
+div.list {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+div.list > p {
+  font-family: bold;
+  user-select: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+div.list > p:hover {
+  color: rgb(125, 125, 125);
+}
+@font-face {
+  font-family: bo;
+  src: url(./font/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(./font/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+  font-family: b;
+  src: url(./font/IBMPlexSerif-Bold.ttf);
+}

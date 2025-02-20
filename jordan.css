@@ -1,0 +1,65 @@
+div.jordan {
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+p.just {
+  font-size: 20px;
+  font-family: bold;
+  font-weight: 500;
+}
+p.shop {
+  font-size: 20px;
+  font-family: bold;
+  font-weight: 500;
+}
+p.run {
+  font-size: 20px;
+  font-family: bold;
+  font-weight: 500;
+}
+h1.jordan {
+  font-size: 65px;
+  font-family: bo;
+  font-weight: 900;
+}
+p.shop {
+  background-color: black;
+  color: white;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 17px;
+  font-family: bold;
+  font-weight: 700;
+}
+p.shop:hover {
+  background-color: rgb(91, 91, 91);
+}
+@font-face {
+  font-family: bo;
+  src: url(./font/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(./font/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+  font-family: b;
+  src: url(./font/IBMPlexSerif-Bold.ttf);
+}
+@media (max-width: 576px) {
+  h1.jordan {
+    font-size: 58px;
+    font-family: bo;
+    font-weight: 900;
+  }
+  p.run {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+}

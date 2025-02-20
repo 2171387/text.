@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header{
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.468);
+  backdrop-filter: blur(200px);
+  z-index: 1000;
+}
+div.head {
+  width: 100%;
+  height: 115px;
+}
+div.top {
+  width: 100%;
+  height: 35px;
+  display: flex;
+}
+div.top > div.left {
+  width: 50%;
+  height: inherit;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 17px;
+}
+div.top > div.left > img.yek {
+  margin-left: 35px;
+  width: 40px;
+  cursor: pointer;
+}
+div.left > img.do {
+  width: 27px;
+  cursor: pointer;
+}
+div.top > div.right {
+  width: 50%;
+  height: inherit;
+  background-color: whitesmoke;
+  display: flex;
+  line-height: 35px;
+  gap: 10px;
+  justify-content: right;
+  flex-flow: row nowrap;
+}
+div.right > p {
+  font-size: 13px;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-family: bold;
+  user-select: none;
+  margin-bottom: 0;
+  height: 0;
+}
+.p1 {
+  user-select: none;
+  cursor: pointer;
+}
+.p3 {
+  user-select: none;
+  cursor: pointer;
+}
+.p5 {
+  user-select: none;
+  cursor: pointer;
+}
+.p7 {
+  user-select: none;
+  cursor: pointer;
+  margin-right: 60px;
+  box-sizing: border-box;
+}
+.p1:hover {
+  color: gray;
+}
+.p3:hover {
+  color: gray;
+}
+.p5:hover {
+  color: gray;
+}
+.p7:hover {
+  color: gray;
+}
+div.bottom {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+div.bottom > div.left {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+div.bottom > div.left > img.se {
+  width: 80px;
+  height: 60px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+div.bottom > div.center {
+  width: 60%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  gap: 25px;
+}
+div.center > p {
+  font-family: bold;
+  user-select: none;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 600;
+  position: relative;
+}
+div.bottom > div.right {
+  width: 20%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.center > p::before {
+  width: 100%;
+  height: 1px;
+  content: "";
+  border-radius: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+div.center > p:hover::before {
+  visibility: visible;
+}
+div.right > input {
+  height: 35px;
+  width: 175px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  padding-left: 35px;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: left;
+  position: relative;
+}
+i {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  cursor: pointer;
+}
+i:hover {
+  background-color: rgba(174, 174, 174, 0.542);
+}
+input::placeholder {
+  color: gray;
+  font-weight: 600;
+  font-size: 18px;
+}
+div.right > input:hover {
+  background-color: rgba(182, 182, 182, 0.332);
+}
+div.right > p.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 40px;
+}
+div.right > p.imag {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+div.right > p > img.ch {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+div.right > p > img.pa {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+div.right > p:hover {
+  background-color: rgba(184, 184, 184, 0.353);
+  border-radius: 50%;
+}
+@font-face {
+  font-family: bold;
+  src: url(./font/MYRIADPRO-REGULAR.OTF);
+}
+div.baner > img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  div.bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  div.bottom > div.left,
+  div.bottom > div.center,
+  div.bottom > div.right {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.bottom > div.left {
+    justify-content: center;
+  }
+  div.bottom > div.right {
+    justify-content: center;
+  }
+  div.top > div.right {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    line-height: 25px;
+  }
+  div.top > div.right > p {
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+  }
+  div.right > input {
+    height: 35px;
+    width: 375px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: left;
+    position: relative;
+  }
+  i {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 440px;
+  }
+  div.baner {
+    margin-top: 150px;
+  }
+  div.top > div.right {
+    width: 50%;
+    height: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    line-height: 25px;
+    justify-content: right;
+    flex-flow: row nowrap;
+  }
+  div.right > p {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-family: bold;
+    user-select: none;
+    margin-bottom: 0;
+    height: 0;
+  }
+  .p7 {
+    user-select: none;
+    cursor: pointer;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  div.bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  div.bottom > div.left,
+  div.bottom > div.center,
+  div.bottom > div.right {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.bottom > div.left {
+    justify-content: center;
+  }
+  div.bottom > div.right {
+    justify-content: center;
+  }
+  div.top > div.right {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    line-height: 25px;
+  }
+  div.top > div.right > p {
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+  }
+  div.right > input {
+    height: 35px;
+    width: 375px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: left;
+    position: relative;
+  }
+  i {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 440px;
+  }
+  div.baner {
+    margin-top: 150px;
+  }
+  div.top > div.right {
+    width: 50%;
+    height: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    line-height: 25px;
+    justify-content: right;
+    flex-flow: row nowrap;
+  }
+  div.right > p {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-family: bold;
+    user-select: none;
+    margin-bottom: 0;
+    height: 0;
+  }
+  .p7 {
+    user-select: none;
+    cursor: pointer;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  div.bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  div.bottom > div.left,
+  div.bottom > div.center,
+  div.bottom > div.right {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.bottom > div.left {
+    justify-content: center;
+  }
+  div.bottom > div.right {
+    justify-content: center;
+  }
+  div.top > div.right {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    line-height: 25px;
+  }
+  div.top > div.right > p {
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+  }
+  div.right > input {
+    height: 35px;
+    width: 375px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: left;
+    position: relative;
+  }
+  i {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 435px;
+  }
+  div.baner {
+    margin-top: 150px;
+  }
+  div.top > div.right {
+    width: 50%;
+    height: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    line-height: 25px;
+    justify-content: right;
+    flex-flow: row nowrap;
+  }
+  div.right > p {
+    font-size: 10px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-family: bold;
+    user-select: none;
+    margin-bottom: 0;
+    height: 0;
+  }
+  .p7 {
+    user-select: none;
+    cursor: pointer;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 576px) {
+  header{
+    position: relative;
+  }
+  div.bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  div.bottom > div.left,
+  div.bottom > div.center,
+  div.bottom > div.right {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.bottom > div.left {
+    justify-content: center;
+  }
+  div.bottom > div.right {
+    justify-content: center;
+  }
+  div.top > div.right {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0;
+    line-height: 25px;
+  }
+  div.top > div.right > p {
+    font-size: 9px;
+    margin: 5px;
+    text-align: center;
+  }
+  div.right > input {
+    height: 35px;
+    width: 320px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: left;
+    position: relative;
+  }
+  i {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 385px;
+  }
+  div.baner {
+    margin-top: 150px;
+  }
+  div.top > div.right {
+    width: 50%;
+    height: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    line-height: 25px;
+    justify-content: right;
+    flex-flow: row nowrap;
+  }
+  div.right > p {
+    font-size: 12px;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-family: bold;
+    user-select: none;
+    margin-bottom: 0;
+    height: 0;
+  }
+  .p7 {
+    user-select: none;
+    cursor: pointer;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width:440px) {
+  div.top > div.right > p {
+    text-align: center;
+  }
+  div.top > div.right {
+    width: 70%;
+    height: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    line-height: 30px;
+    justify-content: right;
+    flex-flow: row wrap;
+  }
+  div.right > input {
+    height: 35px;
+    width: 205px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    padding-left: 35px;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: left;
+    position: relative;
+  }
+  i {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 270px;
+  }
+  div.top > div.left {
+    width: 30%;
+    height: inherit;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: left;
+    gap: 13px;
+  }
+  div.top > div.left > img.yek {
+    margin-left: 25px;
+    width: 35px;
+    cursor: pointer;
+  }
+  div.left > img.do {
+    width: 22px;
+    cursor: pointer;
+  }
+  div.bottom > div.left > img.se {
+    width: 70px;
+    height: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  div.video>video{
+    height: auto;
+  }
+}
